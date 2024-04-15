@@ -1,4 +1,6 @@
-[dependencies]
-iced = "0.12"
-
 [workspace]
+
+members = [
+  "core",
+  "gui",
+]

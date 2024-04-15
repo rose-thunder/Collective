@@ -1,0 +1,4 @@
+[dependencies]
+iced = "0.12"
+
+[workspace]

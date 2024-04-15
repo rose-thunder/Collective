@@ -1,6 +1,7 @@
-[workspace]
+[package]
+name = "collective"
+version = "0.1.0"
 
-members = [
-  "app",
-  "gui",
-]
+[dependencies]
+iced = { git = "https://github.com/iced-rs/iced.git" }
+iced_native = { git = "https://github.com/iced-rs/iced.git" }

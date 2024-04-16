@@ -355,6 +355,7 @@ name = "collective"
 version = "0.1.0"
 dependencies = [
  "iced",
+ "walkdir",
 ]
 
 [[package]]

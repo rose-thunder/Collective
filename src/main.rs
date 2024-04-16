@@ -2,19 +2,19 @@ use iced::executor;
 use iced::{Application, Command, Settings, Theme, Element};
 
 pub fn main() -> iced::Result {
-    Hello::run(Settings::default())
+    Collective::run(Settings::default())
 }
 
-struct Hello;
+struct Collective;
 
-impl Application for Hello {
+impl Application for Collective {
     type Executor = executor::Default;
     type Flags = ();
     type Message = ();
     type Theme = Theme;
 
-    fn new(_flags: ()) -> (Hello, Command<Self::Message>) {
-        (Hello, Command::none())
+    fn new(_flags: ()) -> (Collective, Command<Self::Message>) {
+        (Collective, Command::none())
     }
 
     fn title(&self) -> String {

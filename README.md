@@ -1,2 +1,2 @@
-# Collective File Manager
+# Collective
 

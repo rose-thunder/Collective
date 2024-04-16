@@ -1,10 +1,10 @@
-use std::io;
-
 fn main() {
-    let mut input = String::new();
-    io::stdin().read_line(&mut input).expect("expected to read line");
-    
-    let int_input: i64 = input.trim().parse().unwrap();
+    println!("Hello, world!");
+    let result = add_numbers(2, 3);
+    println!("{}", result)
+}
 
-    println!("{}", int_input)
+fn add_numbers(x: i32, y: i32) -> i32 {
+    let result = x + y;
+    result
 }

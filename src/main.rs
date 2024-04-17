@@ -1,6 +1,9 @@
 use iced::executor;
 use iced::{Application, Command, Settings, Theme, Element};
 
+mod gui;
+mod app;
+
 pub fn main() -> iced::Result {
     Collective::run(Settings::default())
 }

@@ -2,11 +2,7 @@ pub mod style;
 pub mod views;
 pub mod widgets;
 
-use iced::{Application, Command, Element, Settings, Theme};
-
-fn main() -> iced::Result {
-    CollectiveGui::run(Settings::default())
-}
+use iced::{Application, Command, Element, Theme};
 
 pub struct CollectiveGui;
 

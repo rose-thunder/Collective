@@ -2,7 +2,10 @@ pub mod style;
 pub mod views;
 pub mod widgets;
 
-use iced::{Alignment, Application, Command, Element, Length, Renderer, Theme};
+use iced::{
+    window::Settings as Window, Alignment, Application, Command, Element, Length, Renderer,
+    Settings, Theme,
+};
 
 #[derive(Default, Debug, Clone)]
 enum View {
@@ -118,4 +121,17 @@ impl Application for CollectiveGui {
     }
 }
 
-impl CollectiveGui {}
+impl CollectiveGui {
+    pub fn start() -> iced::Result {
+        Self::run(Settings {
+            window: Window {
+                size: (1050, 800),
+                resizable: true,
+                decorations: true,
+                ..iced::window::Settings::default()
+            },
+            default_text_size: 18.0,
+            ..Settings::default()
+        })
+    }
+}
